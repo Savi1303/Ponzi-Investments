@@ -1,5 +1,5 @@
 import express from "express";
-import { deposit, logIn,/* logOut ,*/ newPass, resetPass, signUp } from "../Controllers/userController.js";
+import { logIn,/* logOut ,*/ newPass, resetPass, signUp } from "../Controllers/userController.js";
 import {protect, user} from "../middleware/authMiddleware.js";
 const router = express.Router();
 
@@ -8,9 +8,6 @@ router.post('/register', signUp)
 
 // Login
 router.post('/login', logIn)
-
-// Pay to wallet]
-router.put('/pay', deposit)
 
 // Forgot password 
 router.post('/r-pass', resetPass)

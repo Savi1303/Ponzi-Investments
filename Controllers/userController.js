@@ -112,26 +112,5 @@ const newPass =  async(req, res) => {
 //     }
 // }
 
-// MAKE A PAYMENT
-const deposit = async(req, res) => {
-    try{
-        const {email, wallet} = req.body
-        const user = await User.findOne({email: email})
-        if(user) {
-            // const amount = await new wallet.findOneAndUpdate(wallet)
-            const payment = await User.findOneAndUpdate({wallet : wallet + wallet})
-            if(payment) {
-             res.json({message: "Deposit successful", wallet, user})   
-            }else{
-                res.json({message:"Unable to confirm deposit"})
-            }  
-        }else{
-            res.json({message: "Unable to find user"})
-        }
-    }catch(err){
-        throw new Error(err)
-    }
-}
 
-
-export {signUp, logIn, resetPass, newPass,/* logOut, */deposit}
+export {signUp, logIn, resetPass, newPass,/* logOut, */}

@@ -1,0 +1,72 @@
+Functional Requirements Document (FRD) for Investment Web App Solution 
+
+1. Introduction
+The Investment Web App is designed to provide users with a platform to invest their funds for a specific duration and earn a return on investment (ROI) based on a predefined percentage. The app also includes a referral scheme, allowing users to earn additional benefits by referring new users. Additionally, the app provides users with the ability to fund their wallet and withdraw funds from their wallet. This document includes the functional requirements for both users and administrators.
+
+2. User Registration and Authentication
+2.1. User Registration
+   - Users can create a new account by providing necessary details like name, email, and password.
+
+2.2. User Authentication
+   - Users can log in using their registered email and password.
+   - User sessions remain active until manually logged out or token expires.
+
+3. Investment Features
+3.1. Investment Plans
+   - Users can view a list of available investment plans, each with a defined percentage ROI and duration.
+   - Users can choose a plan and invest their funds for the specified duration.
+   - The invested amount is deducted from the user's wallet balance.
+
+3.2. ROI Calculation and Crediting
+   - Upon the completion of the investment duration, the ROI is calculated based on the percentage provided in the chosen plan.
+   - The calculated ROI is credited to the user's wallet balance.
+
+4. Referral Scheme
+4.1. Referral Link Generation
+   - Users are provided with a unique referral link to share with potential new users.
+
+4.2. Referral Rewards
+   - When a new user registers using a referral link, the referrer is credited with 10% of the first investment done by the new referral.
+   - The referral bonus is credited to the respective users' wallet balances.
+
+5. Wallet Management
+5.1. Funding Wallet
+   - Users can fund their wallet by linking a bank account or using supported payment methods.
+   - Funds transferred to the wallet are added to the user's wallet balance.
+
+5.2. Withdrawal from Wallet
+   - Users can initiate a withdrawal request from their wallet balance.
+   - The requested funds are transferred to the user's registered bank account or payment method.
+
+6. Security and Privacy
+   - The app ensures secure transmission of sensitive data using encryption.
+   - Passwords are hashed and stored securely.
+   - User data and transactions are protected following industry-standard security practices.
+
+7. User Profile
+   - Users can view and update their profile information, including name and email address.
+   - Users can change their password or reset it in case of a forgotten password.
+
+8. Notifications
+   - Users receive email notifications for important account activities, such as successful investments, referral bonuses, and withdrawal requests.
+
+9. Admin Dashboard
+9.1. User Management
+   - Admins can view and manage user accounts, including account details, activity logs, and account suspension or termination if required.
+
+9.2. Investment Management
+   - Admins can manage investment plans, including creating new plans, modifying existing plans, and disabling or removing outdated plans.
+
+9.3. Referral Management
+   - Admins can view referral statistics, including the number of referrals and associated bonuses.
+   - Admins can manually credit referral bonuses if required.
+
+9.4. Wallet Management
+   - Admins can view user wallet balances and transaction history.
+   - Admins can process withdrawal requests and verify the necessary details before initiating transfers.
+
+9.5. Support and Helpdesk Management
+   - Admins can access the support system, view and respond to user inquiries or support tickets.
+
+10. Support and Helpdesk
+   - Users can access a support system for assistance, FAQs, and resolving issues.

@@ -1,5 +1,13 @@
 {
     "cSpell.words": [
+        "Helpdesk",
         "ponzi"
+    ],
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex"
     ]
 }
